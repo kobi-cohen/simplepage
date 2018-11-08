@@ -16,11 +16,13 @@ b.addEventListener("click",()=>{
 
 b.addEventListener("mouseover",(event)=>{
     console.log("Mouse was over on the Button")
-    event.target.style.color = "orange";   
+    event.target.style.color = "orange"; 
+    event.target.style.fontSize = "2rem";  
 });
 
 //Mouse out event
 
 b.addEventListener("mouseout",(event)=>{
+    event.target.style.fontSize = "1rem"; 
     event.target.style.color = "black";   
 });
