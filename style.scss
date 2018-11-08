@@ -1,0 +1,45 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-size:30px;
+
+}
+@mixin fontstyle(){
+    font-family: 'Courier New', Courier, monospace;
+    font-size:.5rem;
+    color: white;
+    font-style: normal;
+    text-decoration: none;
+    padding: 5%;
+}
+
+.fa{
+    
+    position: fixed;
+    width: 100%;
+    height: 500px;
+    background-color: black;
+    @include fontstyle();
+ 
+}
+
+    a{
+        @include fontstyle();
+        color: palegreen;
+        padding: 0;
+
+
+}
+span{
+    @include fontstyle();
+    font-style: italic;
+    padding: 0;
+
+
+   
+}   p{
+      
+    @include fontstyle();
+
+
+    }
