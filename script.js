@@ -1,28 +1,15 @@
-let a=0;
-let b=document.getElementById("first");
 
-//click event
-b.addEventListener("click",()=>{
-    a++;
-    
-    console.log(`You clicked on the button , this is you push number ${a}`);
-    if (a%2==0){
-        console.log("and he is zugi");
-        
-    }
-}); 
+button=document.getElementById("btn"); //define the button and find him in the document
 
-//Mouse over event
+button.addEventListener("click",  // add Event Listener of "click" to the button
+function(){  //function start if the event true
+    inputValue=document.getElementById("input1").value; // get the value of the input box "input1"
+    alert(check(inputValue))}); // send the value to "check" function with the argument of the value
 
-b.addEventListener("mouseover",(event)=>{
-    console.log("Mouse was over on the Button")
-    event.target.style.color = "orange"; 
-    event.target.style.fontSize = "2rem";  
-});
 
-//Mouse out event
-
-b.addEventListener("mouseout",(event)=>{
-    event.target.style.fontSize = "1rem"; 
-    event.target.style.color = "black";   
-});
+function check(inputValue){ // function check - checking if the value is "even" or "odd" and return it
+    if(inputValue % 2 == 0){ // divied the number at 2 and check the "sheerit"
+    return "even";} //if false "even"
+    else{
+return "odd"; //if true "odd"
+}};
